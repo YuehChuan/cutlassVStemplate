@@ -11,7 +11,7 @@ Make sure you have cuda12.2 installed.
 Copy Cudaruntime x64 library under lib folder
 e.g.
 
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\lib\x64
 -->
 cutlassVStemplate\lib\   
 
