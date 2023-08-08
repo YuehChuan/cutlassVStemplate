@@ -1,6 +1,9 @@
 # cutlassVStemplate
 Visual Studio 2022 Win11 cuda12.2 cutlass2.9 CMake template 
-https://github.com/NVIDIA/cutlass/tree/1eb6355182a5124639ce9d3ff165732a94ed9a70
+
+cutlass3.2 depends on c++ 17 standard 
+
+https://github.com/NVIDIA/cutlass
 
 ### How to fly 
 
@@ -27,5 +30,6 @@ step3.
 
 Try some cutlass examples!
 
-See CMakeLists for moe info!
+See CMakeLists for more infos!
+
 https://github.com/YuehChuan/cutlassVStemplate/blob/main/CMakeLists.txt#L44

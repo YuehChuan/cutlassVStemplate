@@ -3,7 +3,7 @@ set(CMAKE_CUDA_COMPILER "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.
 set(CMAKE_CUDA_ARCHITECTURES 70 89) #70 RTX3070 89 RTX4080/4090
 project(cudaVStemplate LANGUAGES CXX CUDA)
 set(CMAKE_CUDA_FLAGS ${CMAKE_CUDA_FLAGS} "-g -G")  # enable cuda-gdb
-set(CMAKE_CUDA_STANDARD 11)#depends on
+set(CMAKE_CUDA_STANDARD 17)#cutlass3.2 depends on c++ 17 standard 
 set(CUDA_PATH "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2")
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
@@ -11,11 +11,11 @@ link_directories(${PROJECT_SOURCE_DIR}/lib)
 
 #thrust, cub  
 include_directories(${CUDA_PATH}/include/)
-#include_directories(${PROJECT_SOURCE_DIR}/include/cuda-12.2-header/)
+include_directories(${PROJECT_SOURCE_DIR}/include/cuda-12.2-header/)
 
 #CUDA
 link_directories(${CUDA_PATH}/lib/x64)
-#link_directories(${PROJECT_SOURCE_DIR}/lib/cuda-12.2-lib/x64/)
+link_directories(${PROJECT_SOURCE_DIR}/lib/cuda-12.2-lib/x64/)
 
 #cutlass
 include_directories(${PROJECT_SOURCE_DIR}/lib/cutlass/include)
